@@ -110,18 +110,14 @@ GET /test - API健康检查
 POST /train/mlp - 训练MLP模型
 POST /train/cnn - 训练CNN模型 (开发中)
 POST /train/lstm - 训练LSTM模型 (开发中)
-扩展指南
-添加新模型：
 
+扩展指南
+
+添加新模型：
 在Flask后端添加新的训练端点
 在前端添加相应的用户界面元素
-改进数据源：
 
+改进数据源：
 可以扩展akshare的使用或集成其他金融数据源
 许可证
 MIT
-
-鸣谢
-感谢Akshare团队提供的金融数据API
-感谢TensorFlow和Keras团队提供的机器学习框架
-感谢Vue.js团队提供的前端框架
