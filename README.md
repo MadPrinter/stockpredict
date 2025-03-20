@@ -1,48 +1,48 @@
 股票预测系统 README
 ![image](https://github.com/user-attachments/assets/41b15419-4511-4bd2-920a-34c7584e848a)
 
-项目概述
-股票预测系统是一个使用机器学习模型预测股票价格的Web应用程序。该系统采用前后端分离架构，使用Flask提供机器学习模型服务，Vue.js构建用户界面。系统支持多层感知机(MLP)、卷积神经网络(CNN)和长短期记忆网络(LSTM)三种模型，用于分析历史股价数据并预测未来趋势。
+项目概述<br>
+股票预测系统是一个使用机器学习模型预测股票价格的Web应用程序。该系统采用前后端分离架构，使用Flask提供机器学习模型服务，Vue.js构建用户界面。系统支持多层感知机(MLP)、卷积神经网络(CNN)和长短期记忆网络(LSTM)三种模型，用于分析历史股价数据并预测未来趋势。<br>
 
-系统架构
-┌─────────────┐      HTTP      ┌─────────────┐
-│  Vue.js前端 │ ◀──────────▶  │  Flask后端  │
-│  (端口8081) │    请求/响应   │  (端口5000) │
-└─────────────┘               └─────────────┘
+系统架构<br>
+┌─────────────┐      HTTP      ┌─────────────┐<br>
+│  Vue.js前端 │ ◀──────────▶  │  Flask后端  │<br>
+│  (端口8081) │    请求/响应   │  (端口5000) │<br>
+└─────────────┘               └─────────────┘<br>
 
-前端：Vue.js应用 (端口8081)
-后端：Flask API服务 (端口5000)
-数据源：通过Akshare库获取实时股票数据
-技术栈
-前端
-Vue.js 3
-Vue Router
-Axios
-Chart.js
-后端
-Flask
-Flask-CORS
-TensorFlow/Keras
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
-Akshare (股票数据API)
-项目结构
-stock-prediction-system/
-├── model_service.py            # Flask后端服务主文件
-├── requirements.txt            # Python依赖列表
-│
-└── stock-predict-frontend/     # Vue.js前端项目
-    ├── public/                 # 静态资源
-    ├── src/                    # 源代码
-    │   ├── assets/             # 资源文件
-    │   ├── components/         # 组件
-    │   ├── router/             # 路由配置
-    │   │   └── index.js        # 路由定义
-    │   ├── views/              # 页面组件
-    │   │   ├── HomePage.vue    # 首页
-    │   │   ├── ModelTraining.vue # 模型训练页面
+前端：Vue.js应用 (端口8081)<br>
+后端：Flask API服务 (端口5000)<br>
+数据源：通过Akshare库获取实时股票数据<br>
+技术栈<br>
+前端<br>
+Vue.js 3<br>
+Vue Router<br>
+Axios<br>
+Chart.js<br>
+后端<br>
+Flask<br>
+Flask-CORS<br>
+TensorFlow/Keras<br>
+NumPy<br>
+Pandas<br>
+Matplotlib<br>
+Scikit-learn<br>
+Akshare (股票数据API)<br>
+项目结构<br>
+stock-prediction-system/<br>
+├── model_service.py            # Flask后端服务主文件<br>
+├── requirements.txt            # Python依赖列表<br>
+│<br>
+└── stock-predict-frontend/     # Vue.js前端项目<br>
+    ├── public/                 # 静态资源<br>
+    ├── src/                    # 源代码<br>
+    │   ├── assets/             # 资源文件<br>
+    │   ├── components/         # 组件<br>
+    │   ├── router/             # 路由配置<br>
+    │   │   └── index.js        # 路由定义<br>
+    │   ├── views/              # 页面组件<br>
+    │   │   ├── HomePage.vue    # 首页<br>
+    │   │   ├── ModelTraining.vue # 模型训练页面<br>
     │   │   └── StockPrediction.vue # 股价预测页面
     │   ├── App.vue             # 主应用组件
     │   └── main.js             # 应用入口
