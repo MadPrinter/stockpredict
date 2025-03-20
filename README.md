@@ -43,83 +43,83 @@ stock-prediction-system/<br>
     │   ├── views/              # 页面组件<br>
     │   │   ├── HomePage.vue    # 首页<br>
     │   │   ├── ModelTraining.vue # 模型训练页面<br>
-    │   │   └── StockPrediction.vue # 股价预测页面
-    │   ├── App.vue             # 主应用组件
-    │   └── main.js             # 应用入口
-    ├── package.json            # npm配置
-    └── vue.config.js           # Vue配置
-安装与配置
-后端（Flask）
-确保已安装Python 3.7+
+    │   │   └── StockPrediction.vue # 股价预测页面<br>
+    │   ├── App.vue             # 主应用组件<br>
+    │   └── main.js             # 应用入口<br>
+    ├── package.json            # npm配置<br>
+    └── vue.config.js           # Vue配置<br>
+安装与配置<br>
+后端（Flask）<br>
+确保已安装Python 3.7+<br>
 
-安装必要的Python包：
+安装必要的Python包：<br>
 
-Copypip install flask flask-cors numpy pandas matplotlib tensorflow scikit-learn akshare
-或者使用requirements.txt：
+Copypip install flask flask-cors numpy pandas matplotlib tensorflow scikit-learn akshare<br>
+或者使用requirements.txt：<br>
 
-Copypip install -r requirements.txt
-前端（Vue.js）
-确保已安装Node.js (14+)和npm
+Copypip install -r requirements.txt<br>
+前端（Vue.js）<br>
+确保已安装Node.js (14+)和npm<br>
 
-进入前端项目目录并安装依赖：
+进入前端项目目录并安装依赖：<br>
 
-Copycd stock-predict-frontend
-npm install
-运行系统
-1. 启动Flask后端
-Copypython model_service.py
-Flask服务将在 http://localhost:5000 上运行
+Copycd stock-predict-frontend<br>
+npm install<br>
+运行系统<br>
+1. 启动Flask后端<br>
+Copypython model_service.py<br>
+Flask服务将在 http://localhost:5000 上运行<br>
 
-2. 启动Vue前端
-Copycd stock-predict-frontend
-npm run serve
-前端应用将在 http://localhost:8081 上运行
+2. 启动Vue前端<br>
+Copycd stock-predict-frontend<br>
+npm run serve<br>
+前端应用将在 http://localhost:8081 上运行<br>
 
-3. 访问应用
-在浏览器中打开 http://localhost:8081 访问应用
+3. 访问应用<br>
+在浏览器中打开 http://localhost:8081 访问应用<br>
 
-功能说明
-主页
-系统状态检查
-功能导航
-模型训练
-输入股票代码（例如：sh000001 - 上证指数）
-选择训练数据日期范围
-设置时间步长参数
-训练模型并查看结果图表和性能指标(MSE, RMSE, MAE)
-股价预测
-输入特征数据
-获取股价预测结果
-故障排除
-常见问题
-"Network Error"错误
+功能说明<br>
+主页<br>
+系统状态检查<br>
+功能导航<br>
+模型训练<br>
+输入股票代码（例如：sh000001 - 上证指数）<br>
+选择训练数据日期范围<br>
+设置时间步长参数<br>
+训练模型并查看结果图表和性能指标(MSE, RMSE, MAE)<br>
+股价预测<br>
+输入特征数据<br>
+获取股价预测结果<br>
+故障排除<br>
+常见问题<br>
+"Network Error"错误<br>
 
-检查Flask服务是否正在运行
-访问 http://localhost:5000/test 测试API可用性
-检查防火墙设置是否阻止了端口通信
-获取股票数据失败
+检查Flask服务是否正在运行<br>
+访问 http://localhost:5000/test 测试API可用性<br>
+检查防火墙设置是否阻止了端口通信<br>
+获取股票数据失败<br>
 
-确认股票代码格式正确（如：sh000001）
-确认选择的日期范围有效
-检查网络连接是否正常
-训练模型时出错
+确认股票代码格式正确（如：sh000001）<br>
+确认选择的日期范围有效<br>
+检查网络连接是否正常<br>
+训练模型时出错<br>
 
-确保选择的时间范围内有足够的数据点
-检查控制台日志获取详细错误信息
-开发者说明
-Flask API端点
-GET /test - API健康检查
-POST /train/mlp - 训练MLP模型
-POST /train/cnn - 训练CNN模型 (开发中)
-POST /train/lstm - 训练LSTM模型 (开发中)
+确保选择的时间范围内有足够的数据点<br>
+检查控制台日志获取详细错误信息<br>
+开发者说明<br>
+Flask API端点<br>
+GET /test - API健康检查<br>
+POST /train/mlp - 训练MLP模型<br>
+POST /train/cnn - 训练CNN模型 (开发中)<br>
+POST /train/lstm - 训练LSTM模型 (开发中)<br>
 
-扩展指南
+扩展指南<br>
 
-添加新模型：
-在Flask后端添加新的训练端点
-在前端添加相应的用户界面元素
+添加新模型：<br>
+在Flask后端添加新的训练端点<br>
+在前端添加相应的用户界面元素<br>
 
-改进数据源：
-可以扩展akshare的使用或集成其他金融数据源
-许可证
-MIT
+改进数据源：<br>
+可以扩展akshare的使用或集成其他金融数据源<br>
+许可证<br>
+MIT<br>
