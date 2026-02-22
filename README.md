@@ -119,9 +119,12 @@ POST /train/lstm - 训练LSTM模型 (开发中)<br>
 在Flask后端添加新的训练端点<br>
 在前端添加相应的用户界面元素<br>
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=MadPrinter/stockpredict.git&type=date&legend=top-left)](https://www.star-history.com/#MadPrinter/stockpredict.git&type=date&legend=top-left)改进数据源：<br>
+改进数据源：<br>
 可以扩展akshare的使用或集成其他金融数据源<br>
 许可证<br>
 MIT<br>
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=MadPrinter/stockpredict.git&type=date&legend=top-left)](https://www.star-history.com/#MadPrinter/stockpredict.git&type=date&legend=top-left)
