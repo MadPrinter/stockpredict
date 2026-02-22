@@ -123,3 +123,7 @@ POST /train/lstm - 训练LSTM模型 (开发中)<br>
 可以扩展akshare的使用或集成其他金融数据源<br>
 许可证<br>
 MIT<br>
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=shaxiu/XianyuAutoAgent&type=date&legend=top-left)](https://www.star-history.com/#shaxiu/XianyuAutoAgent&type=date&legend=top-left)
